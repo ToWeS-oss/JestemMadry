@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>GreenHealth</title>
+</head>
+<body>
+
+    <div class="grid-container-header">
+        <header>
+            <nav id="nav-header">
+                <div id="logo">
+                    <a href="index.html"><img src="./images/logo/LogoMakr-8Vh5YJ.png" alt=""></a> 
+                </div>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Bmi-site.html">BMI-Calculator</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <main>
+        <section id="main-image">
+            <h2>Welcome to the GreenHealth</h2>
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nihil ipsam assumenda unde, labore in facilis laborum praesentium deleniti ducimus perferendis nam quas eos, harum architecto molestias iusto laboriosam cupiditate.</h3>
+            <button><span>Go there</span></button>
+        </section>
+        <section id="main-info">
+
+        </section>
+        <section id="main-slide">
+
+        </section>
+    </main>
+    
+    <footer>
+        <p id="currentDate">Copyright &copy;GreenHealth</p>
+            <nav id="nav-footer">
+                <div id="logo">
+                    <a href="index.html"><img src="./images/logo/LogoMakr-8Vh5YJ.png" alt=""></a> 
+                </div>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Bmi-site.html">BMI-Calculator</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                </ul>
+            </nav>
+    </footer>
+    <script>
+        var today = new Date();
+        var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+        document.getElementById("currentDate").value = date;
+    </script>
+</body>
+</html>
