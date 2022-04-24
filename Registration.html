@@ -14,7 +14,7 @@
 <body>
     <div class="grid-container-header">
         <header>
-            <nav>
+            <nav id="nav-header">
                 <div id="logo">
                     <a href="index.html"><img src="./images/logo/LogoMakr-8Vh5YJ.png" alt=""></a> 
                 </div>
@@ -29,17 +29,34 @@
     </div>
     <div id="registration-form">
         <form action="">
-            <label for="login">Login:</label><br>
-            <input type="text" id="login" name="login"><br>
-            <label for="password">Password:</label><br>
-            <input type="text" id="password" name="password"><br>
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email"><br>
-            <label for="fname">First Name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last Name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <input type="submit" value="Register">
+            <fieldset>
+            <div class="input-field">
+                <label for="login"><span class="label-style">Login</span></label>
+                <input type="text" name="login" required>
+            </div>
+            <br>
+            <div class="input-field">
+                <label for="fpass"><span class="label-style">Password</span></label>
+                <input type="text" name="fpass" required>
+            </div>
+            <br>
+            <div class="input-field">
+                <label for="email"><span class="label-style">Email</span></label>
+                <input type="text" name="email" required>
+            </div>
+            <br>
+            <div class="input-field">
+                <label for="fname"><span class="label-style">First Name</span></label>
+                <input type="text" name="fname" required>
+            </div>
+            <br>
+            <div class="input-field">
+                <label for="lname"><span class="label-style">Last Name</span></label>
+                <input type="text" name="lname" required>
+            </div>
+            <br>
+            <button type="submit" style="border-radius: 4px; align:center">Register</button>
+            </fieldset>
         </form>
     </div>
     <footer>
