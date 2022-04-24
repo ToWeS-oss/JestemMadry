@@ -50,6 +50,43 @@ button:hover{
    transition: 0.7s;
 }
 
+/*form */
+form {
+   width: 50%;
+   margin: 50% auto;
+}
+
+fieldset {
+   border-radius: 5px;
+}
+
+.input-field {
+   font-weight: bold;
+   display: flex;
+   flex-direction: column;
+   width: 500px;
+}
+
+.input-field label {
+   margin-left: 10px;
+   z-index: 2;
+}
+
+.input-field label .label-style {
+   background: #FFF;
+   font-weight: bold;
+   padding: 0 10px;
+}
+
+.input-field input {
+   height: 32px;
+   margin-top: -10px;
+   z-index: 1 !important;
+   padding: 10px 10px;
+   border-radius: 10px;
+}
+
+
 /* Header */
 header{
    min-height: 10vh;
