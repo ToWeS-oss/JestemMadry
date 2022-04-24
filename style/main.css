@@ -52,7 +52,7 @@ button:hover{
 
 /*form */
 form {
-   width: 50%;
+   width: 20%;
    margin: 50% auto;
 }
 
@@ -79,7 +79,7 @@ fieldset {
 }
 
 .input-field input {
-   height: 32px;
+   height: 5.5vh;
    margin-top: -10px;
    z-index: 1 !important;
    padding: 10px 10px;
