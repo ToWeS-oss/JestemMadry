@@ -36,21 +36,20 @@
         
                 <div class="input-field">
                     <label for="fname"><span class="label-style">Login</span></label>
-                    <input type="text" name="fname" required>
+                    <input type="text" name="fname" >
                 </div>
                 <br>
                 <div class="input-field">
                     <label for="fpass"><span class="label-style">Password</span></label>
-                    <input type="text" name="fpass" required>
+                    <input type="text" name="fpass" >
                 </div>
                 <br>
         
                 <button type="submit" style="border-radius: 4px; align:center">Log in</button>
-        
+                
             </fieldset>
-        
         </form>
-        <a href="Registration.html"><button>Sign-Up</button></a>
+        <button onclick="register()">Sign-Up</button>
     
 
     <footer>
@@ -65,6 +64,13 @@
                 <li><a href="Login.html">Login</a></li>
             </ul>
         </nav>
+        <script>
+
+            function register() {
+                window.location.href = "Registration.html";
+            }
+            
+        </script>
 </footer>
 </body>
 </html>
