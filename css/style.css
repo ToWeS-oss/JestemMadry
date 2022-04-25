@@ -1,35 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',
+    sans-serif;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    font-family: 'Lobster Two',
+    cursive;
+}
+
+#hero button {
+    margin-top: 40px;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    background: #4c6e97;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #364e6b;
+}
+
 
 /*header and navbar*/
-header{
+
+header {
+    background-color: #131c27;
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+nav {
     display: flex;
-    justify-content: flex-end;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    min-height: 10vh;
     align-items: center;
-    padding: 20px 50px;
-    box-shadow: 0 1px 8px #ddd;
-    background-color: aquamarine;
+    flex-wrap: wrap;
 }
 
-header li{
-    list-style: none;
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.nav-links{
+nav ul {
     display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
 }
 
-#logo{
-    margin-right: auto;
-    font-size: 1.5em;
+#logo {
+    flex: 2 1 40rem;
 }
 
-nav a{
-    color: black;
-    text-decoration: none;
-    font-size: 1.3rem;
+#hero {
+    min-height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url(/images/yoga-ge93a0bab6_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-nav ul{
-    list-style-type: none;
+@media screen and (max-width: 932px) {
+    html {
+        font-size: 50%;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    #Logo {
+        padding: 2rem;
+    }
 }
