@@ -15,15 +15,15 @@ const isPasswordSecure = (password) => {
 
 const isEmpty = (value) => (value === '' ? false : true);
 
-const UsernameElement = document.getElementById("login");
+const UsernameElement = document.getElementById('login');
 const EmailElement = document.getElementById('email');
 const PasswordElement = document.getElementById('password');
 const FirstName = document.getElementById('fname');
 const LastName = document.getElementById('lname');
 
 const displayError = (input, message) => {
-    console.log(input.id+"Error");
-    document.getElementById(input.id+"Error").innerHTML = message;
+	console.log(input.id + 'Error');
+	document.getElementById(input.id + 'Error').innerHTML = message;
 };
 
 const checkUsername = () => {
@@ -118,8 +118,7 @@ const checkLastName = () => {
 	return valid;
 };
 
-function validate(){
-
+function validateRegistration() {
 	let isUsernameValid = checkUsername(),
 		isEmailValid = checkEmail(),
 		isPasswordValid = checkPassword(),
@@ -133,5 +132,5 @@ function validate(){
 		isConfirmPasswordValid &&
 		isFirstNameValid &&
 		isLastNameValid;
-    return isFormValid;
-};
+	return isFormValid;
+}
