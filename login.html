@@ -45,39 +45,36 @@
             <small id= "LpasswordError"></small>
             </div>
             <button type="submit">Login</button>
+            <a href="./register.html"><button type="button">Sign-Up</button></a>
         </form>
-        </div><br>
-    <div class="form-wrapper">
-    <form name="register-form"  onsubmit="return validateRegistration()">
-        <div class="form-head">
-            <h2>Registration</h2>
-        </div>     
-        <div class="name-form">
-        <label for="login">Login:</label><br>
-        <input type="text" id="login" name="login"><br>
-        <small id= "loginError"></small>
-        <br>
-        <label for="password">Password:</label><br>
-        <input type="text" id="password" name="password"><br>
-        <small id= "passwordError"></small>
-        <br>
-        <label for="email">Email:</label><br>
-        <input type="text" id="email" name="email"><br>
-        <small id= "emailError"></small>
-        <br>
-        <label for="fname">First Name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <small id= "fnameError"></small>
-        <br>
-        <label for="lname">Last Name:</label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <small id= "lnameError"></small>
-        <br>
         </div>
-        <button type="submit">Register</button>
-    </form>
-    </div>
 <script src="./register.js"></script>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div id="logo">
+                <a href="index.html"><img src="./images/logo/LogoMakr-8Vh5YJ.png" alt=""></a>
+            </div>
+            <ul>
+                <li>&copy; Green Health</li>
+                <li>K00262280</li>
+                <li>Today is <span id="currentDate"></span> </li>
+            </ul>
+    
+        </div>
+    </footer>
+    <script>
+        var _Date = setInterval(function () {
+            _GetDate();
+        }, 1);
+
+        function _GetDate() {
+            var today = new Date();
+            var date = today.toDateString();
+            var element = document.getElementById('currentDate');
+            element.innerHTML = date;
+        }
+    </script>
 </body>
 
 </html>
