@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header id="main-head">
+        <nav>
+            <div id="logo">
+                <a href="index.html"><img src="./images/logo/LogoMakr-8Vh5YJ.png" alt=""></a>
+            </div>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./bmi-site.html">BMI Calculator</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="form-wrapper">
+        <form name="register-form" onsubmit="return validateRegistration()">
+            <div class="form-head">
+                <h2>Registration</h2>
+            </div>
+            <div class="name-form">
+                <label for="login">Login:</label><br>
+                <input type="text" id="login" name="login"><br>
+                <small id="loginError"></small>
+                <br>
+                <label for="password">Password:</label><br>
+                <input type="text" id="password" name="password"><br>
+                <small id="passwordError"></small>
+                <br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"><br>
+                <small id="emailError"></small>
+                <br>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <small id="fnameError"></small>
+                <br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <small id="lnameError"></small>
+                <br>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <script src="./register.js"></script>
+</body>
+
+</html>
