@@ -24,6 +24,7 @@
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./gallery.html">Gallery</a></li>
                 <li><a href="./bmi-site.html">BMI Calculator</a></li>
+                <li><a href="./products.html">Products</a></li>
                 <li><a href="./login.html">Login</a></li>
             </ul>
         </nav>
@@ -72,13 +73,6 @@
                     <h4>Travel</h4>
                     <p>Travel in over 250 countries with no effort. Lorem ipsum dolor sit amet.</p>
                 </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <img src="./images/icons/mental-health.png" alt="">
-                    </div>
-                    <h4>Hotel</h4>
-                    <p>Hotel located near popular areas. Lorem ipsum dolor sit amet consectetur. </p>
-                </div>
         </section>
     </main>
 
@@ -90,12 +84,23 @@
             <ul>
                 <li>&copy; Green Health</li>
                 <li>K00262280</li>
-
+                <li>Today is <span id="currentDate"></span> </li>
             </ul>
 
         </div>
     </footer>
+<script>
+    var _Date = setInterval(function () {
+	_GetDate();
+}, 1);
 
+function _GetDate() {
+	var today = new Date();
+    var date = today.toDateString();
+	var element = document.getElementById('currentDate');
+	element.innerHTML = date;
+}
+</script>
 </body>
 
 </html>
