@@ -28,6 +28,32 @@
         </ul>
     </nav>
 </header>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div id="logo">
+                <a href="index.html"><img src="./images/logo/LogoMakr-8Vh5YJ.png" alt=""></a>
+            </div>
+            <ul>
+                <li>&copy; Green Health</li>
+                <li>K00262280</li>
+                <li>Today is <span id="currentDate"></span> </li>
+            </ul>
+    
+        </div>
+    </footer>
+    <script>
+        var _Date = setInterval(function () {
+            _GetDate();
+        }, 1);
+
+        function _GetDate() {
+            var today = new Date();
+            var date = today.toDateString();
+            var element = document.getElementById('currentDate');
+            element.innerHTML = date;
+        }
+    </script>
 </body>
 
 </html>
