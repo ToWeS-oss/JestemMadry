@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&family=Poppins:wght@300;400;500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Green Health | BMI</title>
     
 </head>
 <body>
@@ -27,7 +27,7 @@
         </ul>
     </nav>
 </header>
-
+<main id="bmi">
     <div id="bmi-form">
         <form>
             <h2>BMI Calculator</h2>
@@ -39,18 +39,20 @@
                 <input type="radio" id="genderFemale" name="gender" value="Female">
             </div>
             <div>
-            <label for="weight">Weight:</label><br>
-            <input type="text" id="weight" name="weight"><br>
-            <small id="weightError"></small>
-            <br>
-            <label for="height">Height:</label><br>
-            <input type="text" id="height" name="height"><br>
-            <small id="heightError"></small>
-            <br>
-            <input type="button" value="Calculate" onclick="getBMI()">
+                <label for="weight">Weight:</label><br>
+                <input type="text" id="weight" name="weight"><br>
+                <small id="weightError"></small>
+                <br>
+                <label for="height">Height:</label><br>
+                <input type="text" id="height" name="height"><br>
+                <small id="heightError"></small>
+                <br>
+                <input type="button" value="Calculate" onclick="getBMI()">
         </form>
         <p id="output"></p>
     </div>
+</main>
+
     <script src="./bmi-calculator.js"></script>
 
         <footer>
