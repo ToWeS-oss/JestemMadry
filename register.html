@@ -12,7 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>Document</title>
+    <title>Green Health | Registration</title>
 </head>
 
 <body>
@@ -31,12 +31,21 @@
             </ul>
         </nav>
     </header>
+    <section id="registration">
     <div class="form-wrapper">
         <form name="register-form" onsubmit="return validateRegistration()">
             <div class="form-head">
                 <h2>Registration</h2>
             </div>
             <div class="name-form">
+                <div>
+                    <input type="checkbox" id="customer" name="customer" checked>
+                    <label for="scales">Customer</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="admin" name="admin">
+                    <label for="horns">Admin</label>
+                </div>
                 <label for="login">Login:</label><br>
                 <input type="text" id="login" name="login"><br>
                 <small id="loginError"></small>
@@ -61,6 +70,7 @@
             <button type="submit">Register</button>
         </form>
     </div>
+    </section>
     <script src="./register.js"></script>
     <footer>
         <div class="footer-wrapper">
